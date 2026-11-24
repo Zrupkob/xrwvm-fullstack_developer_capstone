@@ -34,11 +34,27 @@ img{
 
 .title{
   font-size: 20px;
-  background-color: rgb(97, 64, 128);
+  background-color: navy;
   color: white;
   text-align: center;
   margin:20px;
   padding:5px;
+}
+
+.supportlink{
+  font-size: 20px;
+  color: navy;
+  text-align: center;
+  margin:0.01px;
+  padding:0.01px;
+}
+
+.link{
+  font-size: 18px;
+  color: blue;
+  text-align: center;
+  margin:0.01px;
+  padding:0.01px;
 }
 
 .homepage_links{
