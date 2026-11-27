@@ -31,14 +31,14 @@ let curr_user = sessionStorage.getItem('username')
 
 //If the user is logged in, show the username and logout option on home page
 if ( curr_user !== null &&  curr_user !== "") {
-    home_page_items = <div className="input_panel">
-      <text className='username'>{sessionStorage.getItem("username")}</text>
-    <a className="nav_item" href="/djangoapp/logout" onClick={logout}>Logout</a>
+    home_page_items = <div className="input_panel" style={{color:"white"}}>
+      <text className='username' style={{color:"white"}}>{sessionStorage.getItem("username")}</text>
+    <a className="nav_item" style={{color:"white"}} href="/djangoapp/logout" onClick={logout}>Logout</a>
   </div>
 }
     return (
         <div>
-          <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"navy",height:"1in"}}>
+          <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"navy", height:"1in", color:"white"}}>
             <div class="container-fluid">
               <h2 style={{paddingRight: "5%", color:"white"}}>Dealerships</h2>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@ if ( curr_user !== null &&  curr_user !== "") {
                   </li>
                 </ul>
                 <span class="navbar-text">
-                  <div class="loginlink" id="loginlogout">
+                  <div class="loginlink" id="loginlogout" style={{color:"white"}}>
                   {home_page_items}
                   </div>
                   </span>
